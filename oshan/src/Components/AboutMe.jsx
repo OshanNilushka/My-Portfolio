@@ -20,7 +20,7 @@ export const AboutMe = () => {
               Passionate Web Developer & Tech Creator
             </h3>
 
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground md:text-justify">
               I'm a passionate Full-Stack Developer focused on building
               intelligent and visually refined systems. With a strong
               foundation in both front-end and back-end technologies, I thrive
@@ -29,7 +29,7 @@ export const AboutMe = () => {
               problem-solving and continuous learning.
             </p>
 
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground md:text-justify">
               I specialize in crafting responsive and dynamic web applications,
               leveraging modern frameworks and tools to bring ideas to life.
               Whether it's developing intuitive user interfaces or architecting
