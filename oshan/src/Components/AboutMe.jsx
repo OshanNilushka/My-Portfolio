@@ -1,4 +1,4 @@
-import { ArrowDownIcon, Briefcase, Code, User } from "lucide-react";
+import {  Briefcase, Code, User } from "lucide-react";
 import oshanProfile from "../assets/oshan.jpeg";
 
 export const AboutMe = () => {
