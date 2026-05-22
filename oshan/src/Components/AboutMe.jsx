@@ -3,8 +3,8 @@ import oshanProfile from "../assets/oshan.jpeg";
 
 export const AboutMe = () => {
   return (
-    <section id="about" className="relative py-24 px-4">
-      <div className="container mx-auto max-w-5xl">
+    <section id="about" className="py-24 px-8 relative">
+      <div className="container mx-auto max-w-4xl">
         
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">

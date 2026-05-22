@@ -5,6 +5,7 @@ import { AboutMe } from "../Components/AboutMe";
 import { SkillSection } from "../Components/SkillsSection";
 import { ProjectSection } from "../Components/ProjectSection";
 import { ContactSection } from "../Components/ContactSection";
+import { Footer } from "../Components/Footer";
 
 
 export const Home = () => {
@@ -29,6 +30,7 @@ export const Home = () => {
      </main>
 
      {/*Footer*/}
+     <Footer />
     </div>
   );        
 

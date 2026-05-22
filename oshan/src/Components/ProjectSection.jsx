@@ -64,7 +64,7 @@ export const ProjectSection = () => {
     const visibleProjects = projects.slice(0,100);
 
     return (
-        <section id="projects" className="py-16 px-4 relative">
+        <section id="projects" className="py-24 px-16 relative">
             <div className="container mx-auto max-w-5xl relative z-10">
 
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -83,7 +83,7 @@ export const ProjectSection = () => {
                     {visibleProjects.map((project) => (
                         <article
                             key={project.id}
-                            className="group w-full max-w-64 overflow-hidden rounded-2xl border border-border/60 bg-card/80 backdrop-blur-sm shadow-xs card-hover"
+                            className="group w-full max-w-64 overflow-hidden rounded-3xl border border-border/60 bg-card/80 backdrop-blur-sm shadow-s card-hover"
                         >
                             <div className="relative overflow-hidden bg-secondary/30 aspect-video">
                                 <img
@@ -95,7 +95,7 @@ export const ProjectSection = () => {
                                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                             </div>
 
-                            <div className="p-4 flex flex-col gap-3">
+                            <div className="p-5 flex flex-col gap-3">
                                 <div className="flex flex-wrap gap-2">
                                     {project.tags.map((tag, index) => (
                                         <span
@@ -108,11 +108,11 @@ export const ProjectSection = () => {
                                 </div>
 
                                 <div className="text-left flex-1">
-                                    <h3 className="text-base font-semibold leading-snug mb-1.5">
+                                    <h3 className="text-lg font-semibold leading-snug mb-2">
                                         {project.title}
                                     </h3>
 
-                                    <p className="text-sm text-muted-foreground leading-relaxed max-h-[4.5rem] overflow-hidden">
+                                    <p className="text-sm text-muted-foreground leading-relaxed max-h-[4rem] overflow-y-auto scrollbar-thin scrollbar-thumb-primary/40 scrollbar-track-transparent pr-2">
                                         {project.description}
                                     </p>
                                 </div>
