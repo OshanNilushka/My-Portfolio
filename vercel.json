@@ -1,5 +1,0 @@
-{
-  "installCommand": "cd oshan && npm install",
-  "buildCommand": "cd oshan && npm run build",
-  "outputDirectory": "oshan/dist"
-}
