@@ -1,12 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "oshan/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ]
+  "installCommand": "cd oshan && npm install",
+  "buildCommand": "cd oshan && npm run build",
+  "outputDirectory": "oshan/dist"
 }
