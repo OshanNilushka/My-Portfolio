@@ -19,8 +19,7 @@ export const AboutMe = () => {
           bg-[size:55px_55px]"
         />
 
-        {/* Floating Square */}
-        <div className="absolute top-20 left-16 w-20 h-20 rounded-2xl bg-primary/40 blur-sm animate-float"></div>
+        {/* Floating Square removed */}
 
         {/* Bottom Circle */}
         <div className="absolute bottom-24 right-14 w-16 h-16 rounded-full border-[5px] border-primary/70 animate-pulse"></div>
