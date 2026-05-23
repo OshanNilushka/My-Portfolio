@@ -1,5 +1,5 @@
 import { Briefcase, Code, User } from "lucide-react";
-import oshanProfile from "../assets/oshan.jpeg";
+import oshanProfile from "../assets/Oshan.png";
 
 export const AboutMe = () => {
   return (
