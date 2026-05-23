@@ -211,3 +211,32 @@
   text-align: center;
 }
 
+
+/* Add inside global.css */
+
+@keyframes float {
+  0%,100%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float{
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes spinSlow {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spinSlow{
+  animation: spinSlow 15s linear infinite;
+}
+
