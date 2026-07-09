@@ -58,6 +58,18 @@ const projects = [
         DemoURL: "#",
         GithubURL: "#",
     },
+
+    {
+        id: 6,
+        title: "MovieHub",
+        description:
+            "MovieHub is a MERN-stack movie discovery website that allows users to browse and search for their favorite films.",
+        image: "/Projects/Project6.png",
+        tags: ["MERN", "MongoDB", "Express", "React", "Node.js", "tailwind CSS"],
+
+        DemoURL: "#",
+        GithubURL: "#",
+    },
 ];
 
 export const ProjectSection = () => {
