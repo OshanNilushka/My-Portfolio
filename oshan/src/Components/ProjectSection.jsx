@@ -69,7 +69,21 @@ const projects = [
 
         DemoURL: "#",
         GithubURL: "#",
+
     },
+
+    {
+    id: 7,
+        title: "MyWallet",
+        description:
+            "MyWallet is a Spring Boot-based financial management application built with Java and PostgreSQL.",
+        image: "/Projects/Project7.png",
+        tags: ["Spring Boot", "Java", "PostgreSQL", "tailwind CSS"],
+
+        DemoURL: "#",
+        GithubURL: "#",
+
+    }
 ];
 
 export const ProjectSection = () => {
