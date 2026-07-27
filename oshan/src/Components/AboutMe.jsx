@@ -1,7 +1,16 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { useState } from "react";
+import { Briefcase, Code, User, Check } from "lucide-react";
 import oshanProfile from "../assets/Oshan.png";
 
 export const AboutMe = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleDownload = () => {
+    setClicked(true);
+    setTimeout(() => {
+      setClicked(false);
+    }, 3000);
+  };
   return (
     <section
       id="about"
@@ -85,16 +94,26 @@ export const AboutMe = () => {
               <a
                 href="/Oshan_Nilushka.pdf"
                 download
-                className="
+                onClick={handleDownload}
+                className={`
                 px-7 py-3 rounded-full
-                border border-primary
-                text-primary
-                hover:bg-primary/10
-                hover:scale-105
-                transition-all duration-300
-                text-center"
+                border transition-all duration-300
+                text-center flex items-center justify-center gap-2
+                ${
+                  clicked
+                    ? "border-green-500 text-green-500 bg-green-500/10 scale-105 shadow-[0_0_20px_rgba(34,197,94,0.3)]"
+                    : "border-primary text-primary hover:bg-primary/10 hover:scale-105"
+                }
+                `}
               >
-                Download My CV
+                {clicked ? (
+                  <>
+                    <Check className="w-5 h-5" />
+                    CV Downloaded!
+                  </>
+                ) : (
+                  "Download My CV"
+                )}
               </a>
             </div>
           </div>
