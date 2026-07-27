@@ -83,7 +83,7 @@ export const AboutMe = () => {
               </a>
 
               <a
-                href="/cv.pdf"
+                href="/Oshan_Nilushka.pdf"
                 download
                 className="
                 px-7 py-3 rounded-full
