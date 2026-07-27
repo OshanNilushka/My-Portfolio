@@ -13,7 +13,7 @@ export const ContactSection = () => {
         setIsSubmitting(true);
 
         const formData = new FormData(e.target);
-        formData.append("access_key", "80ab4c7f-dc7f-492d-bd04-1aaa33eedd9a");
+        formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
