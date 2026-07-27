@@ -8,25 +8,50 @@ export const ContactSection = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const formRef = useRef(null);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        setTimeout(() => {
+        const formData = new FormData(e.target);
+        formData.append("access_key", "f96d3bc0-1f76-43ca-be3c-05693923d056");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                toast({
+                    title: "Message Sent!",
+                    description: "Thank you for reaching out. I'll get back to you soon.",
+                    type: "success",
+                    duration: 5000
+                });
+                
+                if (formRef.current) {
+                    formRef.current.reset();
+                }
+            } else {
+                toast({
+                    title: "Failed to Send",
+                    description: data.message || "Something went wrong. Please try again.",
+                    type: "error",
+                    duration: 5000
+                });
+            }
+        } catch (error) {
             toast({
-                title: "Message Sent!",
-                description: "Thank you for reaching out. I'll get back to you soon.",
-                type: "success",
+                title: "Error occurred",
+                description: "Could not connect to the server. Please try again later.",
+                type: "error",
                 duration: 5000
             });
-            
-            // Reset form
-            if (formRef.current) {
-                formRef.current.reset();
-            }
-            
+        } finally {
             setIsSubmitting(false);
-        }, 1500);
+        }
     };
 
 
