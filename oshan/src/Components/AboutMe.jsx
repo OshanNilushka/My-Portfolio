@@ -94,7 +94,7 @@ export const AboutMe = () => {
                 transition-all duration-300
                 text-center"
               >
-                Download CV
+                Download My CV
               </a>
             </div>
           </div>
