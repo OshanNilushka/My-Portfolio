@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Briefcase, Code, User, Check } from "lucide-react";
+import { Briefcase, Code, User, Eye, Check } from "lucide-react";
 import oshanProfile from "../assets/Oshan.png";
 
 export const AboutMe = () => {
@@ -93,7 +93,8 @@ export const AboutMe = () => {
 
               <a
                 href="/Oshan_Nilushka.pdf"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={handleDownload}
                 className={`
                 px-7 py-3 rounded-full
@@ -109,10 +110,13 @@ export const AboutMe = () => {
                 {clicked ? (
                   <>
                     <Check className="w-5 h-5" />
-                    CV Downloaded!
+                    Opening CV...
                   </>
                 ) : (
-                  "Download My CV"
+                  <>
+                    <Eye className="w-5 h-5" />
+                    View My CV
+                  </>
                 )}
               </a>
             </div>
