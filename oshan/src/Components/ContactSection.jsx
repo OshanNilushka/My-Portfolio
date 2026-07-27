@@ -116,10 +116,10 @@ export const ContactSection = () => {
                                     <h4 className="font-medium">Phone</h4>
 
                                     <a
-                                        href="tel:+94715679926"
+                                        href="tel:+94785679926"
                                         className="text-muted-foreground hover:text-primary transition-colors"
                                     >
-                                        +94 71 5679926
+                                        +94 78 5679926
                                     </a>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@ export const ContactSection = () => {
 
                                 {/* WhatsApp */}
                                 <a
-                                    href="https://wa.me/94700000000"
+                                    href="https://wa.me/94785679926"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition"
