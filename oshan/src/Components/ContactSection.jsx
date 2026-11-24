@@ -30,7 +30,7 @@ export const ContactSection = () => {
                     type: "success",
                     duration: 5000
                 });
-                
+
                 if (formRef.current) {
                     formRef.current.reset();
                 }
@@ -119,7 +119,7 @@ export const ContactSection = () => {
                                         href="tel:+94785679926"
                                         className="text-muted-foreground hover:text-primary transition-colors"
                                     >
-                                        +94 78 5679926
+                                        +94 71 5679926
                                     </a>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@ export const ContactSection = () => {
                                 disabled={isSubmitting}
                                 className="w-full px-4 py-2 bg-primary text-primary-foreground font-medium rounded-md hover:bg-primary/90 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                               {isSubmitting ? "Sending..." : "Send Message"}
+                                {isSubmitting ? "Sending..." : "Send Message"}
                             </button>
                         </form>
                     </div>
