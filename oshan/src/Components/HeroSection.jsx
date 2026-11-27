@@ -141,6 +141,7 @@ export const HeroSection = () => {
                 <div className="p-2 rounded-xl bg-primary/20 text-primary shrink-0">
                   <Code2 className="w-4 h-4" />
                 </div>
+                
 
               </div>
             </div>

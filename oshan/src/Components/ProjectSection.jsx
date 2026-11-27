@@ -15,6 +15,17 @@ const projects = [
 
     {
         id: 2,
+        title: "NethminiOpticals",
+        description:
+            "The Smart eye care management System is a frontend and backend web application built using React, JavaScript, Tailwind CSS,Node.js and PostgreSQL. It provides a platform for eye care professionals to manage their patients, appointments, and prescriptions efficiently.Here Customer can check virtul try on glasses and OCR Scanner For Prescription.",
+        image: "/Projects/Project8.png",
+        tags: ["React", "JavaScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
+        DemoURL: "https://nethminiopticalslk.vercel.app/",
+        GithubURL: "https://github.com/OshanNilushka/nethminiopticalsnew.git",
+    },
+
+    {
+        id: 3,
         title: "School Management System",
         description:
             "The school Management & student portal is a frontend and backend web application built using JavaScript, PHP & MySQL. It provides a platform for schools to manage their students, teachers, and courses efficiently.",
@@ -25,7 +36,7 @@ const projects = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: "The Noble Collection",
         description:
             "The Noble Collection is a frontend web application built using HTML & CSS. It provides a platform for users to buy and sell products online.",
@@ -36,7 +47,7 @@ const projects = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: "DataBloom",
         description:
             "DataBloom is a Python-based data analysis and visualization project that utilizes libraries such as Pandas to analyze and visualize complex datasets.",
@@ -48,7 +59,7 @@ const projects = [
 
 
     {
-        id: 5,
+        id: 6,
         title: "MyPortfolio",
         description:
             "MyPortfolio is a React-based portfolio website that showcases my skills and projects.",
@@ -60,7 +71,7 @@ const projects = [
     },
 
     {
-        id: 6,
+        id: 7,
         title: "MovieHub",
         description:
             "MovieHub is a MERN-stack movie discovery website that allows users to browse and search for their favorite films.",
@@ -73,7 +84,7 @@ const projects = [
     },
 
     {
-    id: 7,
+        id: 8,
         title: "MyWallet",
         description:
             "MyWallet is a Spring Boot-based financial management application built with Java and PostgreSQL.",
@@ -87,7 +98,7 @@ const projects = [
 ];
 
 export const ProjectSection = () => {
-    const visibleProjects = projects.slice(0,100);
+    const visibleProjects = projects.slice(0, 100);
 
     return (
         <section id="projects" className="py-24 px-16 relative">
